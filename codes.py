@@ -1,16 +1,9 @@
+b = [0, 0]
 a = int(input())
-s = set()
-S = set()
 for i in range(a):
-	s.add(input().lower())
-b = int(input())
-for i in range(b):
-	d = input().lower().split()
-	for j in d:
-		if j in s:
-			continue
-		else:
-			S.add(j)
-for i in S:
-	print(i)
-
+	c = input().split()
+	if c[0] == 'север' or c[0] == 'юг':
+		b[1] += int(c[1])
+	else:
+		b[0] += int(c[1])
+print(b)
