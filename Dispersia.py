@@ -11,4 +11,3 @@ for i in c:
 g = g / (len(a) - 1)
 print(c)
 print(b)
-print(g ** 0.5)
