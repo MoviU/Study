@@ -1,4 +1,4 @@
-a = input().split()
+a = [1, 3, 5, 7, 8]
 c = []
 b = 0; g = 0
 for i in a:
@@ -9,5 +9,4 @@ for i in a:
 for i in c:
 	g += i
 g = g / (len(a) - 1)
-print(c)
-print(b)
+print(g ** 0.5)
